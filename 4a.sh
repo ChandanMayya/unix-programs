@@ -9,6 +9,6 @@ do
 		cat $i | tr "[a-z]" "[A-Z]"
 		echo "------------------------------------------"
 	else
-		echo "$i File not found"
+		echo "$i File not found!"
 	fi
 done
