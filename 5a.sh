@@ -1,11 +1,11 @@
 #Write a shell script that accepts filename as argument and display its creation time if file
 #exist and if does not send output error message.
 
-filename=$1
-if [ -e $filename ]
+file1=$1
+if [ -f $file1 ]
 then
-	set -- `ls -ld $filename`
-	echo "The Creation time of $filename is $6 $7 $8"
+	set -- `ls -l $file1`
+	echo "Modified time of $file1 is $8"
 else
-	echo "File doesnt exits"
+	echo "File not found!"
 fi
