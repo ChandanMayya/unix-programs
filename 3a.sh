@@ -8,7 +8,7 @@ then
 	echo "File link count: $2"
 	echo "Current User: $3"
 	echo "Current Group: $4"
-	echo "File Modification is done on $5 $6 $7 at $8"
+	echo "File Modification is done on $6 $7 at $8"
 	echo "File name: $9:"
 else
 	echo "File does not exits"
