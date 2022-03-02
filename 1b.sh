@@ -12,5 +12,5 @@ then
 	done
 	echo "Directories are created"
 else
-	echo "Please enter a parameter"
+	echo "Enter proper parameter"
 fi
