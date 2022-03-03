@@ -5,5 +5,5 @@ if [ $date -gt 9 ]
 then
 	cal | tr -d "[\137][\010]" | sed "$l s/$date/**/"
 else
-	cal | tr -d "[\137][\010]" | sed "$l s/$d/*/"
+	cal | tr -d "[\137][\010]" | sed "$l s/$date/*/"
 fi
