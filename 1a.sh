@@ -1,7 +1,7 @@
 if [ $# -eq 1 ]
 then
 	dirnam=$1
-	if [ -d $dirnm ]
+	if [ -d $dirnam ]
 	then
 		set -- `ls -Rl $dirnam |grep "^-" | tr -s " " | cut -d " " -f 5,9| sort -n | tail -l`
 		echo "File name: $2"
