@@ -1,9 +1,20 @@
 #Shell script to display greetings as per the user login time
 
 set -- `who`
-user=$1
-set -- `echo $4 |tr ":" " "`             
+user=`whoami`
+for i in $*
+do
+	if [ $user != $1 ]
+	then
+		`shift 5`
+	else
+		hr=$4
+	fi
+done
+
+set -- `echo $hr |tr ":" " "`             
 h=$1
+
 if [ $h -ge 4 ] && [ $h -lt 12 ]
 then
 	echo "Good morning Mr./Mrs. $user"
