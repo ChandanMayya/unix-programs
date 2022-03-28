@@ -1,6 +1,7 @@
 #Shell script to display greetings as per the user login time
 
 set -- `who`
+hr=$4
 user=`whoami`
 for i in $*
 do
